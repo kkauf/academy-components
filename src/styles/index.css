@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional custom styles */
+@layer components {
+  /* Button styles */
+  .btn {
+    @apply px-4 py-2 rounded-md text-center font-medium transition-colors duration-200 inline-flex items-center justify-center;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-blue-accent;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-yellow-600;
+  }
+  
+  .btn-outline {
+    @apply border border-primary text-primary hover:bg-primary hover:text-white;
+  }
+  
+  .btn-sm {
+    @apply px-3 py-1 text-sm;
+  }
+  
+  .btn-lg {
+    @apply px-6 py-3 text-lg;
+  }
+  
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
+  }
+  
+  .card-header {
+    @apply p-4 border-b border-light-gray;
+  }
+  
+  .card-body {
+    @apply p-4;
+  }
+  
+  .card-footer {
+    @apply p-4 border-t border-light-gray;
+  }
+  
+  /* Form styles */
+  .form-control {
+    @apply block w-full px-3 py-2 border border-light-gray rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+  }
+  
+  .form-label {
+    @apply block mb-1 font-medium text-dark-gray;
+  }
+  
+  .form-error {
+    @apply mt-1 text-red-500 text-sm;
+  }
+}
